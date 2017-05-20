@@ -31,7 +31,9 @@ sudo rosdep init
 # To find available packages, use:
 rosdep update
 # Environment Setup
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+# This has caused issues with PYTHONPATH
+# so just source when needed
+#echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+#source ~/.bashrc
 # Install rosinstall
 sudo apt-get install python-rosinstall -y
